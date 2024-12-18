@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #080808;
+}
+
+.container{
+    border: 2px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background: #fff;
+    border-radius: 1em;
+    position: relative;
+}
+
+.container .img-troca{
+    width: 15em;
+    height: 15em;
+    object-fit: cover;
+    border: 5px solid #080808;
+    border-radius: 50%;
+    margin-bottom: 5em;
+}
+
+.conteudo h1{
+    font-size: calc(1em +1vw);
+    margin-bottom: 1em;
+}
+
+.nome{
+    position: relative;
+}
+
+.nome i{
+    position: absolute;
+    right: 20px;
+    top: 10%;
+    font-size: 2.5em;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.conteudo input{
+    width: 20em;
+    height: 3em;
+    font-size: x-large;
+    outline: none;
+    margin-bottom: 2em;
+    border-radius: 0.7em;
+    padding-left: 0.5em;
+}
+
+.res{
+    font-size: 1.7em;
+    margin-bottom: 1.3em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: rgb(245, 19, 19);
+    opacity: 0;
+}
+
+.mostrar{
+    opacity: 1;
+}
+
+.btn{
+    width: 10em;
+    height: 3em;
+    border-radius: 2em;
+    background-color: rgb(161, 50, 55);
+    color: #fff;
+    margin-bottom: 1em;
+    border: none;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.contBtn{
+    font-size: 2em;
+}
+
+.cadastrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1em;
+}
+
+.cadastrar p{
+    font-size: calc(1.1em + 1vw);
+}
+
+.cadastrar a{
+    font-size: calc(1.1em + 1vw);
+    color: #2604e7;
+}
+
+@media (min-width: 1024px) {
+    .cadastrar a{
+        font-size: 1.8em;
+    }
+    
+    .cadastrar p{
+        font-size: 1.8em; 
+    }
+}
+
+.container2{
+    position: absolute;
+    border: 2px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background: #fff;
+    border-radius: 1em;
+    display: none;
+}
+
+.formularioCadastro{
+    display: flex;
+    flex-direction: column;
+}
+
+.container2 h2{
+    font-size: calc(1em +1vw);
+    margin-bottom: 1em;
+}
+
+.container2 input{
+    width: 20em;
+    height: 2.5em;
+    font-size: x-large;
+    outline: none;
+    margin-bottom: 2em;
+    border-radius: 0.7em;
+    padding-left: 0.5em;
+}
+
+.BtnCadastroFinal button{
+    width: 6em;
+    border: 2px solid #000;
+    font-size: 1.8em;
+    text-align: center;
+    border-radius: 1em;
+    padding: 7px;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.voltarLongin{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.voltarLongin p{
+    font-size: calc(1.1em + 1vw);
+}
+
+.voltarLongin a{
+    font-size: calc(1.1em + 1vw);
+    font-weight: 700;
+    color: #2604e7;
+}
+
+@media (min-width: 1024px) {
+    .voltarLongin a{
+        font-size: 1.8em;
+    }
+    
+    .voltarLongin p{
+        font-size: 1.8em; 
+    }
+}
